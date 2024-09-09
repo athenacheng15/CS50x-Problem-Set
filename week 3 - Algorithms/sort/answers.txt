@@ -1,0 +1,14 @@
+sort1 uses: Bubble sort
+
+How do you know?: Because it takes much less time to execute an array that has been sorted than the other two,
+                  this is the situation that occurs when Bubble Sort executes an already sorted array.
+
+sort2 uses: Merge sort
+
+How do you know?: Because this algorithm takes a short time whether it is reversed, random, or sorted.
+                  And the time it takes to exetute the reversed file or random file is significantly less than the other two algorithms.
+
+sort3 uses: Selection sort
+
+How do you know?: This algorithm takes about the same amount of time in the three cases.
+                  This is because the time complexity of Selection Sort is O(n2) in either case.
