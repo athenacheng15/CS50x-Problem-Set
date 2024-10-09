@@ -20,6 +20,7 @@ Each problem set is structured in its respective folder, and includes:
 3. [Week 3: Algorithms](./Week3-Algorithms/)
 4. [Week 4: Memory](./Week4-Memory/)
 5. [Week 5: Data Structures](./Week5-Data%20Structures/)
+5. [Week 6: Python](./Week6-Python/)
 
 
 Feel free to explore the code!
