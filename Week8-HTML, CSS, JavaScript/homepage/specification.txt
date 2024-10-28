@@ -1,0 +1,21 @@
+HTML Tags:
+1.<main>: Used as the main content area for the page.
+2.<div>: Used for structuring sections, containers, and button groups.
+3.<img>: Displays profile picture and badges.
+4.<button>: Creates interactive buttons to open links in new tabs.
+5.<h1>: Defines the main heading of the webpage, introducing the user ("Hi, it's Yuchun Here!").
+6.<h5>: Used for subheadings to categorize sections like "Things I Code With" and "My Stats."
+7.<ul>: Creates an unordered list to display profile details, such as role, interests, and goals.
+8.<li>: Defines each list item within the <ul>, representing individual pieces of information.
+9.<a>: Wraps around icons for LinkedIn, enabling clickable links to external profiles with target="_blank" for opening in new tabs.
+10.<hr>: Used to create horizontal dividers between sections, such as separating the profile information, skills, and contact sections for improved readability and visual organization.
+
+CSS Properties:
+1.background-color: Sets the background color for the webpage and various elements for visual appeal.
+2.border-radius: Applies rounded corners to images, buttons, and containers to create a softer, modern look.
+3.display: Specifies the layout of elements using flexbox for responsive alignment.
+4.transition: Adds smooth animation for button color and image scale on hover.
+5.margin: Adds spacing around elements to improve readability and layout flow.
+
+JavaScript and Bootstrap:
+JavaScript is used to implement interactive functionalities, such as opening links in new tabs and enlarging the profile image on hover, as per assignment specifications. Bootstrap provides a responsive, flex-based layout for content alignment and easy integration of a consistent button style.
