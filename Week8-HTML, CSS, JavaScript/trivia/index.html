@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            // Part 1: Multiple Choice
+            const buttons = document.querySelectorAll(".section1 button");
+            const feedback = document.getElementById("feedback");
+            const correctAnswer = "Max Verstappen";
+
+            buttons.forEach(button => {
+                button.addEventListener("click", function() {
+
+                    // Remove all styles from buttons
+                    buttons.forEach(btn => btn.classList.remove("correct-answer", "incorrect-answer"));
+
+                    // Check if the correct answer was clicked
+                    if (button.innerHTML === correctAnswer) {
+                        button.classList.add("correct-answer");
+                        feedback.className = "feedback correct";
+                        feedback.textContent = "Correct";
+                    } else {
+                        button.classList.add("incorrect-answer");
+                        feedback.className = "feedback incorrect";
+                        feedback.textContent = "Incorrect";
+                    }
+                });
+            });
+
+            // Part 2: Free Response
+            const checkAnswerButton = document.querySelector(".section2 input[type='submit']");
+            const userInput = document.querySelector(".section2 input[type='text']");
+            const freeResponseFeedback = document.getElementById("freeResponseFeedback");
+
+            checkAnswerButton.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent form submission from refreshing the page
+                const userAnswer = userInput.value.trim().toLowerCase();
+
+                // Remove the correct or incorrect style from the input field
+                userInput.classList.remove("correct-input", "incorrect-input");
+
+                if (userAnswer === "undercut") {
+                    freeResponseFeedback.className = "feedback correct";
+                    userInput.classList.add("correct-input");
+                    freeResponseFeedback.textContent = "Correct";
+                } else {
+                    freeResponseFeedback.className = "feedback incorrect";
+                    userInput.classList.add("incorrect-input");
+                    freeResponseFeedback.textContent = "Incorrect";
+                }
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section section1">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                 <!-- TODO: Add multiple choice question here -->
+                <h3>Who secured the FIA Formula 1 World Drivers' Championship title for the 2023 season?</h3>
+                <div id="feedback" class="feedback"></div>
+                <button>Lewis Hamilton</button>
+                <button>Charles Leclerc</button>
+                <button>Fernando Alonso</button>
+                <button>Max Verstappen</button>
+                <button>Lando Norris</button>
+                <button>Sergio Perez</button>
+            </div>
+            <div class="section section2">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                 <h3>In Formula 1, what strategy involves pitting earlier than a rival to gain an advantage by running on fresher tires, often resulting in an on-track position gain after the rival makes their pit stop?</h3>
+                 <div id="freeResponseFeedback" class="feedback"></div>
+                 <input type="text" placeholder="Your Answer Here">
+                 <input type="submit" value="Check Answer">
+            </div>
+        </div>
+    </body>
+</html>
