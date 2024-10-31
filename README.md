@@ -23,5 +23,6 @@ Each problem set is structured in its respective folder, and includes:
 6. [Week 6: Python](./Week6-Python/)
 7. [Week 7: SQL](./Week7-SQL/)
 8. [Week 8: HTML, CSS, JavaScript](./Week8-HTML,%20CSS,%20JavaScript/)
+8. [Week 9: Flask](./Week9-Flask/)
 
 Feel free to explore the code!
